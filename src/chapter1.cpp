@@ -9,8 +9,11 @@ void chapter()
     std::cout << ("You identify yourself to be on the floor inside a small structure.\n");
     std::cout << ("What do you do?\n");
 
-    std::vector<std::string> verb = {"stand", "look", "search"};
-    std::vector<std::string> objects = {"table", "flashlight"};
+    //std::vector<std::string> verb = {"stand", "look", "search"};
+    //std::vector<std::string> objects = {"table", "flashlight"};
+
+    object flashlight;
+    flashlight.verbs = {"use", "inspect"};
 
     std::getline(std::cin, action);
 
